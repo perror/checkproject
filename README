@@ -6,21 +6,20 @@ programming assignments.
 
 Features TODO-list
 ==================
-
 * Scan the test in a directory hierarchy. (done)
 * Run the test files in the correct order. (done)
 * Stop the test suite if a specific exception is raised. (done)
 * Collect a full report for each test and gather it. (done)
+* File checking
+  - check presence of the required files and directories (done)
+  - check the absence of unwanted files
+    (executable files, back-up files, ...) (done)
+
+Next in raw: Coding style checking
 
 Modules to write
 ----------------
-* File checking
-  - check presence of the required files
-  - check the absence of unwanted files
-    (executable files, back-up files, ...)
-  - check the directory hierarchy of the project
-
-* Coding style checking (pycparser?)
+* Coding style checking (pygments?)
   - Implements a module to check C syntax with proper
     coding style (my coding style).
 
@@ -29,8 +28,8 @@ Modules to write
     (think about the timeout and fork-bomb)
 
 * Black-box
-  - run a command line with a timeout within a docker with limited
-    amount of memory.
+  - run a command line with a timeout within a docker/qemu with
+    limited amount of memory.
 
 * Memcheck
   - Easy interface for valgrind (and easy results gathering)
