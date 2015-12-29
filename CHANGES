@@ -1,0 +1,18 @@
+checkproject Changelog
+======================
+
+Version 1.0
+-----------
+(not released yet)
+
+- Added a scan of the test files and execute it in a given order.
+- Added functions to check file hierarchy inside the project.
+- Check the coding-style (C language and Makefiles).
+
+- Create and run a Docker container to run the tests inside.
+- Run a command inside the container and get the result.
+
+- Memcheck a command run into a Docker container.
+- Static analysis of the code.
+
+- Merge with unittest Test framework (inherits from it?)
