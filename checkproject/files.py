@@ -84,7 +84,8 @@ class Files(object):
         specific format of this module: '(path, type, extra)'.
 
         """
-        import fnmatch, re
+        import fnmatch
+        import re
         unwanted = []
 
         for unwanted_file in unwanted_files:

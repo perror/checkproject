@@ -1,6 +1,7 @@
 # -*- coding: utf-8
 
 """Main program when called as a command line software"""
+import sys
 
 def main(args):
     """Main function of the checkproject module"""
@@ -43,6 +44,4 @@ def main(args):
 
 # Main function
 if __name__ == '__main__':
-    import sys
-
     sys.exit(main(sys.argv))

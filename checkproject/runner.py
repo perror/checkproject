@@ -8,7 +8,8 @@ def import_module(module_path):
     @return: A reference to the module once loaded.
 
     """
-    import os, sys
+    import os
+    import sys
 
     module_filename = module_path.split(os.sep)[-1]
     if int(sys.version[0]) >= 3:
@@ -59,7 +60,8 @@ class CheckRunner(object):
 
         """
         from checkproject.utils import remove_prefix
-        import os, fnmatch
+        import os
+        import fnmatch
 
         if top_dir is None:
             top_dir = self.checks_dir
@@ -84,7 +86,8 @@ class CheckRunner(object):
         @return: A list of all the checks ordered as for executing it.
 
         """
-        import os, re
+        import os
+        import re
 
         # Initializing self.checks if needed
         if self.checks is None:
@@ -114,7 +117,8 @@ class CheckRunner(object):
 
     def run(self, pattern='Check*'):
         """Execute the checks and collect all the results"""
-        import os, re
+        import os
+        import re
 
         # Initializing self.checks if needed
         if self.checks is None:
